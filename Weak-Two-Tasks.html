@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hami MiniMarket — Product Catalog</title>
+  <link rel="stylesheet" href="Weak-Two-Tasks.css" />
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+</head>
+<body>
+ 
+  <header class="site-header">
+    <div class="brand">
+      <img src="imeges/image.png" alt="Hami logo" class="logo">
+      <div>
+        <h1>Hami MiniMarket</h1>
+        <small>Fresh • Local • Trusted</small>
+      </div>
+    </div>
+
+
+    <div class="nav-actions">
+      <input id="searchInput" class="search" type="text" placeholder="Search products..." />
+      <button id="cartToggle" class="cart-btn">🛒 <span id="cartCount">0</span></button>
+      <button id="hamburger" class="hamburger">☰</button>
+    </div>
+  </header>
+
+  <section class="filters">
+    <div class="category-group" role="tablist" aria-label="Category filters">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="fruits">Fruits</button>
+      <button class="category-btn" data-category="vegetables">Vegetables</button>
+    </div>
+
+    <div class="price-group">
+      <label for="priceRange">Max Price: <span id="priceValue">$20</span></label>
+      <input id="priceRange" type="range" min="0" max="20" step="0.5" value="20">
+    </div>
+  </section>
+
+  <main class="catalog" id="catalog">
+    <article class="product" data-name="Apple" data-category="fruits" data-price="2.5">
+      <img src="imeges/image-1-apple.jpg" alt="Apple">
+      <h3>Apple</h3><p class="price">$2.50</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Banana" data-category="fruits" data-price="1.2">
+      <img src="imeges/image-6-Banana Bread Muffin Tops.jpg" alt="Banana">
+      <h3>Banana</h3><p class="price">$1.20</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Orange" data-category="fruits" data-price="2.0">
+      <img src="imeges/orange.jpeg" alt="Orange">
+      <h3>Orange</h3><p class="price">$2.00</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Mango" data-category="fruits" data-price="3.5">
+      <img src="imeges/mango.jpeg" alt="Mango">
+      <h3>Mango</h3><p class="price">$3.50</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Papaya" data-category="fruits" data-price="2.8">
+      <img src="imeges/image-3-Papaya.jpg" alt="Papaya">
+      <h3>Papaya</h3><p class="price">$2.80</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Pineapple" data-category="fruits" data-price="4.0">
+      <img src="imeges/pineapple.jpeg" alt="Pineapple">
+      <h3>Pineapple</h3><p class="price">$19.00</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Strawberry" data-category="fruits" data-price="3.0">
+      <img src="imeges/image-4-Strowpery.jpg" alt="Strawberry">
+      <h3>Strawberry</h3><p class="price">$13.00</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Kiwi" data-category="fruits" data-price="2.2">
+      <img src="imeges/kiwi.jpeg" alt="Kiwi">
+      <h3>Kiwi</h3><p class="price">$2.20</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Carrot" data-category="vegetables" data-price="1.5">
+      <img src="imeges/carrot home.jpg" alt="Carrot">
+      <h3>Carrot</h3><p class="price">$7.50</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Tomato" data-category="vegetables" data-price="1.8">
+      <img src="imeges/image-5-Tomato.jpg" alt="Tomato">
+      <h3>Tomato</h3><p class="price">$2.80</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Broccoli" data-category="vegetables" data-price="2.8">
+      <img src="imeges/broccoli.jpeg" alt="Broccoli">
+      <h3>Broccoli</h3><p class="price">$3.20</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Cucumber" data-category="vegetables" data-price="1.7">
+      <img src="imeges/Cucumber.jpeg" alt="Cucumber">
+      <h3>Cucumber</h3><p class="price">$1.00</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Spinach" data-category="vegetables" data-price="2.2">
+      <img src="imeges/spinach.jpeg" alt="Spinach">
+      <h3>Spinach</h3><p class="price">$0.20</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Potato" data-category="vegetables" data-price="1.4">
+      <img src="imeges/potatoes.jpeg" alt="Potato">
+      <h3>Potato</h3><p class="price">$4.40</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Onion" data-category="vegetables" data-price="1.6">
+      <img src="imeges/onion.jpeg" alt="Onion">
+      <h3>Onion</h3><p class="price">$0.60</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article class="product" data-name="Bell Pepper" data-category="vegetables" data-price="2.5">
+      <img src="imeges/bell papper.jpeg" alt="Bell Pepper">
+      <h3>Bell Pepper</h3><p class="price">$17.50</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+  </main>
+
+  <button id="backToTop" title="Back to top">⬆</button>
+
+  <aside id="miniCart" class="mini-cart">
+    <div class="mini-cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart">✖</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="empty">Cart is empty</p>
+    </div>
+    <div class="mini-cart-footer">
+      <div class="total">Total: $<span id="cartTotal">0.00</span></div>
+      <button id="checkoutBtn" class="checkout">Checkout</button>
+    </div>
+  </aside>
+
+  <footer>
+  <p>© 2025 Hami MiniMarket | All rights reserved</p>
+
+  <div class="socials">
+    <a href="#" aria-label="Facebook" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="#" aria-label="Instagram" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" aria-label="X (Twitter)" target="_blank">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+  </div>
+
+  <button id="backToTop">⬆</button>
+</footer>
+
+
+  <script src="Weak-Two-Tasks.js"></script>
+</body>
+</html>
